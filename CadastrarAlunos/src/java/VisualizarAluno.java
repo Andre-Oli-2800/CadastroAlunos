@@ -13,8 +13,6 @@ public class VisualizarAluno extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter escreverTela=response.getWriter();
-		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy"); 
-                
 		escreverTela.println("<h1>Lista de Alunos</h1>");
 		List<Aluno> lista=AlunoDao.getTodosAlunos();
 		escreverTela.print("<table border='1' width='100%'");
