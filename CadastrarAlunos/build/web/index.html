@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="ISO-8859-1">  
+<title>Cadastrar Alunos</title>  
+</head>  
+<body>  
+  
+<h1>Adicionar novo aluno</h1>  
+<form action="SalvarAluno" method="post">  
+<table>
+<tr><td></td><td><input type="hidden" name="id" required/></td></tr>    
+<tr><td>Nome:</td><td><input type="text" name="nome" minlength="2" required/></td></tr>
+<tr><td>Email:</td><td><input type="email" name="email"/></td></tr> 
+<tr><td>Data de Nascimento:</td><td><input type="date" name="dataNascimento" minlength="1" required/></td></tr> 
+<tr><td>Senha</td><td><input type="password" name="senha " minlength="7" required/></td></tr>  
+<tr><td colspan="2"><input type="submit" value="Adicionar Aluno"/></td></tr>
+
+</table>  
+</form>  
+  
+<br/>  
+<a href="VisualizarAluno">Ver Alunos</a>  
+  
+</body>  
+</html>  
